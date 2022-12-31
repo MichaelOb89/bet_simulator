@@ -23,16 +23,11 @@ app.use(require('./config/checkToken'))
 app.use('/api/fruits', require('./routes/api/fruits'))
 app.use('/api/games', require('./routes/api/games'))
 app.use('/api/users', require('./routes/api/users'))
-
-app.get('/api/test', (req, res) => {
-    res.json({'eureka': 'you found it'})
-})
+app.use('/api/bets', require('./routes/api/bets'))
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
-
-
 
 app.listen(PORT, () => {
     console.log(`Running on ${PORT}`)
