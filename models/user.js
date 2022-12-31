@@ -17,7 +17,8 @@ const userSchema = new Schema({
     trim: true,
     minLength: 3,
     required: true
-  }
+  },
+  bets: [{ type: Schema.Types.ObjectId, ref: 'Bets' }]
 }, {
   timestamps: true,
   toJSON: {

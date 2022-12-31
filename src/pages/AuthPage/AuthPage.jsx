@@ -10,7 +10,9 @@ export default function AuthPage({setUser}){
     return(
         <main>
             <h1>Auth Page</h1>
-            <h3 onClick={changeForm}>Sign up</h3>
+            {login ? <h3 onClick={changeForm}>Click here to sign up</h3> :
+            <h3 onClick={changeForm}>Click to login existing user</h3>
+            }
             { login ?
             <LoginForm setUser={setUser}/> :
             <SignUpForm setUser={setUser}/>

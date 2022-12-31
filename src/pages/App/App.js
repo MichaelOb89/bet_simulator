@@ -4,7 +4,7 @@ import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import Nav from '../../components/NavBar/NavBar';
 import {Routes, Route} from 'react-router-dom'
-import FruitsPage from '../FruitsPage/FruitsPage';
+import Home from '../Home/Home'
 
 function App() {
   const[state, setState] = useState(null)
@@ -16,7 +16,7 @@ function App() {
         <>
           <Nav />
           <Routes>
-            <Route path='/fruits' element={<FruitsPage />}/>
+            <Route path='/' element={<Home />}/>
             <Route path='/orders/new' element={<NewOrderPage />}/>
             <Route path='/orders' element={<OrderHistoryPage />}/>
             <Route path='/' element={<NewOrderPage />}/>
