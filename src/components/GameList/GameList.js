@@ -11,7 +11,8 @@ export default function GameList({ getGames, games, setGames }){
                     <ul>
                     {games.map((game)=>{
                         return(
-                            <Game game={game}/>
+                            <Game game={game}
+                            key={game.fixture.id}/>
                         )
                     })} 
                     </ul>
