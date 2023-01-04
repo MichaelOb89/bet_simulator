@@ -4,7 +4,8 @@ import Bet from "../../components/Bet/Bet"
 
 export default function Home(props){
     const [games, setGames] = useState([])
-    const [matchId, setMatchId] = useState(null)
+    const [match, setMatch] = useState(null)
+
     //Retrieves upcoming games from the backend
     const getGames = async () => {
         try{
@@ -26,10 +27,10 @@ export default function Home(props){
             getGames={getGames}
             games={games}
             setGames={setGames}
-            setMatchId={setMatchId}
+            setMatch={setMatch}
             />
-            {matchId ? <Bet matchId={matchId}/> : 
-            <h2>Select a match to place a bet</h2>}
+            {match ? <Bet match={match} setMatch={setMatch}/> : 
+            <h2>Select a match to place a new bet</h2>}
         </div>
     </>
     )

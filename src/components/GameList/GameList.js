@@ -1,6 +1,6 @@
 import Game from '../Game/Game'
 
-export default function GameList({ getGames, games, setGames, setMatchId }){
+export default function GameList({ getGames, games, setGames, setMatch }){
     return(
         <>
             {
@@ -13,7 +13,7 @@ export default function GameList({ getGames, games, setGames, setMatchId }){
                         return(
                             <Game game={game}
                             key={game.fixture.id}
-                            setMatchId={setMatchId}/>
+                            setMatch={setMatch}/>
                         )
                     })}
                     </ul>

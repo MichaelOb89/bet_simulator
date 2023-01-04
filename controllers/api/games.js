@@ -1,4 +1,5 @@
 const games = require('../../data/games')
+
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 // let games = null
 // const getGames = async () => {
