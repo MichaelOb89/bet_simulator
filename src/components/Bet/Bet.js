@@ -9,6 +9,7 @@ export default function Bet({match, setMatch}){
         matchId: "",
         ammount: 0,
         odds: "",
+        date: "",
         team: "",
         isFinished: false
     })
@@ -60,13 +61,16 @@ export default function Bet({match, setMatch}){
     const optionChangeHandler = (evt) => {
         if(evt.target.value==match.teams.home.name){
             setNewBet({...newBet, team: evt.target.value,
-            odds: homeOdds})
+            odds: homeOdds,
+            date: match.fixture.date})
         } else if(evt.target.value==match.teams.away.name){
             setNewBet({...newBet, team: evt.target.value,
-            odds: awayOdds})
+            odds: awayOdds,
+            date: match.fixture.date})
         } else if(evt.target.value=="Draw"){
             setNewBet({...newBet, team: "Draw",
-            odds: drawOdds})
+            odds: drawOdds,
+            date: match.fixture.date})
         }
     }
 
