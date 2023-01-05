@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import GameList from "../../components/GameList/GameList"
 import Bet from "../../components/Bet/Bet"
 
-export default function Home(props){
+export default function Home({user}){
     const [games, setGames] = useState([])
     const [match, setMatch] = useState(null)
 
@@ -29,7 +29,10 @@ export default function Home(props){
             setGames={setGames}
             setMatch={setMatch}
             />
-            {match ? <Bet match={match} setMatch={setMatch}/> : 
+            {match ?
+            <Bet match={match}
+            setMatch={setMatch}
+            userEmail={user}/> : 
             <h2>Select a match to place a new bet</h2>}
         </div>
     </>

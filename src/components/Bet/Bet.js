@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-export default function Bet({match, setMatch}){
+export default function Bet({match, setMatch, userEmail}){
     const [homeOdds, setHomeOdds] = useState(null)
     const [awayOdds, setAwayOdds] = useState(null)
     const [drawOdds, setDrawOdds] = useState(null)
@@ -11,7 +11,8 @@ export default function Bet({match, setMatch}){
         odds: "",
         date: "",
         team: "",
-        isFinished: false
+        isFinished: false,
+        user: userEmail
     })
     const getOdds = async (id) => {
         try {

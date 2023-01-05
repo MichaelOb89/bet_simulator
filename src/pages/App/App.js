@@ -16,7 +16,7 @@ function App() {
         <>
           <Nav />
           <Routes>
-            <Route path='/' element={<Home />}/>
+            <Route path='/' element={<Home user={user}/>}/>
             <Route path='/orders/new' element={<NewOrderPage />}/>
             <Route path='/orders' element={<OrderHistoryPage />}/>
             <Route path='/' element={<NewOrderPage />}/>
