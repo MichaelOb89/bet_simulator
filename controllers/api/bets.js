@@ -29,7 +29,7 @@ const dataController = {
   },
   // Update
   update(req, res, next) {
-    Fruit.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedBet) => {
+    Bet.findByIdAndUpdate(req.params.id, req.body, { new: true }, (err, updatedBet) => {
         if (err) {
           res.status(400).send({
             msg: err.message,

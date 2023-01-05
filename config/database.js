@@ -7,3 +7,5 @@ const db = mongoose.connection;
 db.on('connected', function () {
   console.log(`Connected to MongoDB`);
 });
+
+module.exports = mongoose.connection

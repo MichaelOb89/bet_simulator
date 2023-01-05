@@ -5,6 +5,7 @@ const betSchema = new Schema({
     ammount: Number,
     odds: Number,
     team: {type: String, required: true},
+    date: Date,
     isFinished: Boolean
 }, {
     timestamps: true
