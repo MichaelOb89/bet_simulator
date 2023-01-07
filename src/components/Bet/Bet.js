@@ -13,7 +13,8 @@ export default function Bet({match, setMatch, userEmail}){
         team: "",
         isFinished: false,
         isPaid: false,
-        user: userEmail
+        user: userEmail,
+        won: null
     })
     const getOdds = async (id) => {
         try {
@@ -47,7 +48,8 @@ export default function Bet({match, setMatch, userEmail}){
                     ammount: 0,
                     odds: "",
                     team: "",
-                    isFinished: false
+                    isFinished: false,
+                    won: null
             })
             setMatch(null)
         } catch (error) {
@@ -81,16 +83,17 @@ export default function Bet({match, setMatch, userEmail}){
     }, [match])
     
     return(
-        <>
+        <div className="bet">
             <h1>Bet on {match.teams.home.name}&nbsp;x&nbsp;{match.teams.away.name}</h1>
             <h2>Home:&nbsp;{homeOdds} Away: &nbsp;{awayOdds} Draw: &nbsp;{drawOdds}</h2>
             <input name="ammount" value={newBet.ammount} onChange={handleChange}></input><br/>
             <select value={newBet.team} name="team" onChange={optionChangeHandler}>
+                <option></option>
                 <option value={match.teams.home.name}>{match.teams.home.name}</option>
                 <option value={match.teams.away.name}>{match.teams.away.name}</option>
                 <option value={"Draw"}>Draw</option>
             </select>
             <button onClick={createBet}>Submit Bet</button>
-        </>
+        </div>
     )
 }
