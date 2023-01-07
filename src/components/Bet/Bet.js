@@ -12,6 +12,7 @@ export default function Bet({match, setMatch, userEmail}){
         date: "",
         team: "",
         isFinished: false,
+        isPaid: false,
         user: userEmail
     })
     const getOdds = async (id) => {
