@@ -17,7 +17,8 @@ const userSchema = new Schema({
     trim: true,
     minLength: 3,
     required: true
-  }
+  },
+  bets: [{ type: Schema.Types.ObjectId, ref: 'Bets' }]
 }, {
   timestamps: true,
   toJSON: {
@@ -36,4 +37,6 @@ userSchema.pre('save', async function (next) {
   return next()
 })
 
-module.exports = model('User', userSchema)
+const User = model('User', userSchema)
+
+module.exports = User
