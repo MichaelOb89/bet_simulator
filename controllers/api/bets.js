@@ -14,6 +14,18 @@ const dataController = {
       }
     });
   },
+  userIndex(req, res, next) {
+    Bet.find({user: req.params.id}, (err, foundBets) => {
+      if(err){
+        res.status(400).send({
+          msg: err.message
+        })
+      } else{
+        res.locals.data.bets = foundBets
+        next()
+      }
+    })
+  },
   // Destroy
   destroy(req, res, next) {
     Bet.findByIdAndDelete(req.params.id, (err, deletedBet) => {
@@ -68,7 +80,7 @@ const dataController = {
         next();
       }
     });
-  },
+  }
 }
 
 const apiController = {
@@ -77,8 +89,7 @@ const apiController = {
     },
     show(req, res, next) {
         res.json(res.locals.data.bet)
-    }
-
+    },
 }
 
 module.exports = { dataController, apiController}

@@ -2,7 +2,7 @@ import Game from '../Game/Game'
 
 export default function GameList({ getGames, games, setGames, setMatch }){
     return(
-        <>
+        <div className='game-list-container'>
             {
                 games.length ? 
                 (
@@ -20,6 +20,6 @@ export default function GameList({ getGames, games, setGames, setMatch }){
                 </div>)
                 : ""
             }
-        </>
+        </div>
     )    
 }

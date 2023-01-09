@@ -1,21 +1,11 @@
 import { useState, useEffect } from "react";
 
 
-export default function Bet({match, setMatch, userEmail}){
+export default function Bet({match, setMatch, newBet, setNewBet, setSubmitBet, submitBet}){
     const [homeOdds, setHomeOdds] = useState(null)
     const [awayOdds, setAwayOdds] = useState(null)
     const [drawOdds, setDrawOdds] = useState(null)
-    const [newBet, setNewBet] = useState({
-        matchId: "",
-        ammount: 0,
-        odds: "",
-        date: "",
-        team: "",
-        isFinished: false,
-        isPaid: false,
-        user: userEmail,
-        won: null
-    })
+
     const getOdds = async (id) => {
         try {
             const response = await fetch(`https://v3.football.api-sports.io/odds?season=2022&fixture=${match.fixture.id}&bookmaker=8&league=39`, {
@@ -52,6 +42,7 @@ export default function Bet({match, setMatch, userEmail}){
                     won: null
             })
             setMatch(null)
+            setSubmitBet(!submitBet)
         } catch (error) {
             console.error(error)
         }
@@ -83,7 +74,7 @@ export default function Bet({match, setMatch, userEmail}){
     }, [match])
     
     return(
-        <div className="bet">
+            <div className="bet">
             <h1>Bet on {match.teams.home.name}&nbsp;x&nbsp;{match.teams.away.name}</h1>
             <h2>Home:&nbsp;{homeOdds} Away: &nbsp;{awayOdds} Draw: &nbsp;{drawOdds}</h2>
             <input name="ammount" value={newBet.ammount} onChange={handleChange}></input><br/>
