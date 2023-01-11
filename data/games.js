@@ -3,10 +3,10 @@ const games = {
     "parameters": {
         "league": "39",
         "season": "2022",
-        "next": "9"
+        "last": "10"
     },
     "errors": [],
-    "results": 9,
+    "results": 10,
     "paging": {
         "current": 1,
         "total": 1
@@ -14,61 +14,61 @@ const games = {
     "response": [
         {
             "fixture": {
-                "id": 868124,
-                "referee": "D. England",
+                "id": 868129,
+                "referee": "P. Tierney",
                 "timezone": "UTC",
-                "date": "2022-12-30T19:45:00+00:00",
-                "timestamp": 1672429500,
+                "date": "2023-01-05T20:00:00+00:00",
+                "timestamp": 1672948800,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672948800,
+                    "second": 1672952400
                 },
                 "venue": {
-                    "id": 598,
-                    "name": "London Stadium",
+                    "id": 519,
+                    "name": "Stamford Bridge",
                     "city": "London"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
-                    "id": 48,
-                    "name": "West Ham",
-                    "logo": "https://media.api-sports.io/football/teams/48.png",
-                    "winner": null
+                    "id": 49,
+                    "name": "Chelsea",
+                    "logo": "https://media-2.api-sports.io/football/teams/49.png",
+                    "winner": false
                 },
                 "away": {
-                    "id": 55,
-                    "name": "Brentford",
-                    "logo": "https://media.api-sports.io/football/teams/55.png",
-                    "winner": null
+                    "id": 50,
+                    "name": "Manchester City",
+                    "logo": "https://media-2.api-sports.io/football/teams/50.png",
+                    "winner": true
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 1
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "fulltime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 1
                 },
                 "extratime": {
                     "home": null,
@@ -82,61 +82,61 @@ const games = {
         },
         {
             "fixture": {
-                "id": 868119,
-                "referee": "C. Pawson",
+                "id": 868130,
+                "referee": "M. Oliver",
                 "timezone": "UTC",
-                "date": "2022-12-30T20:00:00+00:00",
-                "timestamp": 1672430400,
+                "date": "2023-01-04T20:00:00+00:00",
+                "timestamp": 1672862400,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672862400,
+                    "second": 1672866000
                 },
                 "venue": {
-                    "id": 550,
-                    "name": "Anfield",
-                    "city": "Liverpool"
+                    "id": 525,
+                    "name": "Selhurst Park",
+                    "city": "London"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
-                    "id": 40,
-                    "name": "Liverpool",
-                    "logo": "https://media.api-sports.io/football/teams/40.png",
-                    "winner": null
+                    "id": 52,
+                    "name": "Crystal Palace",
+                    "logo": "https://media-2.api-sports.io/football/teams/52.png",
+                    "winner": false
                 },
                 "away": {
-                    "id": 46,
-                    "name": "Leicester",
-                    "logo": "https://media.api-sports.io/football/teams/46.png",
-                    "winner": null
+                    "id": 47,
+                    "name": "Tottenham",
+                    "logo": "https://media-2.api-sports.io/football/teams/47.png",
+                    "winner": true
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 4
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 0
                 },
                 "fulltime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 4
                 },
                 "extratime": {
                     "home": null,
@@ -150,61 +150,61 @@ const games = {
         },
         {
             "fixture": {
-                "id": 868125,
-                "referee": "R. Jones",
+                "id": 868127,
+                "referee": "J. Gillett",
                 "timezone": "UTC",
-                "date": "2022-12-31T12:30:00+00:00",
-                "timestamp": 1672489800,
+                "date": "2023-01-04T20:00:00+00:00",
+                "timestamp": 1672862400,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672862400,
+                    "second": 1672866000
                 },
                 "venue": {
-                    "id": 600,
-                    "name": "Molineux Stadium",
-                    "city": "Wolverhampton, West Midlands"
+                    "id": 495,
+                    "name": "Villa Park",
+                    "city": "Birmingham"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
+                    "id": 66,
+                    "name": "Aston Villa",
+                    "logo": "https://media-3.api-sports.io/football/teams/66.png",
+                    "winner": null
+                },
+                "away": {
                     "id": 39,
                     "name": "Wolves",
                     "logo": "https://media-1.api-sports.io/football/teams/39.png",
                     "winner": null
-                },
-                "away": {
-                    "id": 33,
-                    "name": "Manchester United",
-                    "logo": "https://media-1.api-sports.io/football/teams/33.png",
-                    "winner": null
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 1,
+                "away": 1
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 1
                 },
                 "fulltime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 },
                 "extratime": {
                     "home": null,
@@ -218,61 +218,61 @@ const games = {
         },
         {
             "fixture": {
-                "id": 868116,
-                "referee": "A. Marriner",
+                "id": 868132,
+                "referee": "D. Coote",
                 "timezone": "UTC",
-                "date": "2022-12-31T15:00:00+00:00",
-                "timestamp": 1672498800,
+                "date": "2023-01-04T19:45:00+00:00",
+                "timestamp": 1672861500,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672861500,
+                    "second": 1672865100
                 },
                 "venue": {
-                    "id": 504,
-                    "name": "Vitality Stadium",
-                    "city": "Bournemouth, Dorset"
+                    "id": 546,
+                    "name": "Elland Road",
+                    "city": "Leeds, West Yorkshire"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
-                    "id": 35,
-                    "name": "Bournemouth",
-                    "logo": "https://media-1.api-sports.io/football/teams/35.png",
+                    "id": 63,
+                    "name": "Leeds",
+                    "logo": "https://media-3.api-sports.io/football/teams/63.png",
                     "winner": null
                 },
                 "away": {
-                    "id": 52,
-                    "name": "Crystal Palace",
-                    "logo": "https://media-1.api-sports.io/football/teams/52.png",
+                    "id": 48,
+                    "name": "West Ham",
+                    "logo": "https://media-1.api-sports.io/football/teams/48.png",
                     "winner": null
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 2,
+                "away": 2
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 1
                 },
                 "fulltime": {
-                    "home": null,
-                    "away": null
+                    "home": 2,
+                    "away": 2
                 },
                 "extratime": {
                     "home": null,
@@ -286,61 +286,61 @@ const games = {
         },
         {
             "fixture": {
-                "id": 868118,
-                "referee": "G. Scott",
+                "id": 868135,
+                "referee": "T. Bramall",
                 "timezone": "UTC",
-                "date": "2022-12-31T15:00:00+00:00",
-                "timestamp": 1672498800,
+                "date": "2023-01-04T19:30:00+00:00",
+                "timestamp": 1672860600,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672860600,
+                    "second": 1672864200
                 },
                 "venue": {
-                    "id": 535,
-                    "name": "Craven Cottage",
-                    "city": "London"
+                    "id": 585,
+                    "name": "St. Mary's Stadium",
+                    "city": "Southampton, Hampshire"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
-                    "id": 36,
-                    "name": "Fulham",
-                    "logo": "https://media.api-sports.io/football/teams/36.png",
-                    "winner": null
-                },
-                "away": {
                     "id": 41,
                     "name": "Southampton",
                     "logo": "https://media-1.api-sports.io/football/teams/41.png",
-                    "winner": null
+                    "winner": false
+                },
+                "away": {
+                    "id": 65,
+                    "name": "Nottingham Forest",
+                    "logo": "https://media-2.api-sports.io/football/teams/65.png",
+                    "winner": true
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 1
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 1
                 },
                 "fulltime": {
-                    "home": null,
-                    "away": null
+                    "home": 0,
+                    "away": 1
                 },
                 "extratime": {
                     "home": null,
@@ -354,61 +354,61 @@ const games = {
         },
         {
             "fixture": {
-                "id": 868120,
-                "referee": "A. Madley",
+                "id": 868134,
+                "referee": "M. Salisbury",
                 "timezone": "UTC",
-                "date": "2022-12-31T15:00:00+00:00",
-                "timestamp": 1672498800,
+                "date": "2023-01-03T20:00:00+00:00",
+                "timestamp": 1672776000,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672776000,
+                    "second": 1672779600
                 },
                 "venue": {
-                    "id": 555,
-                    "name": "Etihad Stadium",
+                    "id": 556,
+                    "name": "Old Trafford",
                     "city": "Manchester"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
-                    "id": 50,
-                    "name": "Manchester City",
-                    "logo": "https://media-1.api-sports.io/football/teams/50.png",
-                    "winner": null
+                    "id": 33,
+                    "name": "Manchester United",
+                    "logo": "https://media-1.api-sports.io/football/teams/33.png",
+                    "winner": true
                 },
                 "away": {
-                    "id": 45,
-                    "name": "Everton",
-                    "logo": "https://media.api-sports.io/football/teams/45.png",
-                    "winner": null
+                    "id": 35,
+                    "name": "Bournemouth",
+                    "logo": "https://media-2.api-sports.io/football/teams/35.png",
+                    "winner": false
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 3,
+                "away": 0
             },
             "score": {
                 "halftime": {
-                    "home": null,
-                    "away": null
+                    "home": 1,
+                    "away": 0
                 },
                 "fulltime": {
-                    "home": null,
-                    "away": null
+                    "home": 3,
+                    "away": 0
                 },
                 "extratime": {
                     "home": null,
@@ -422,197 +422,265 @@ const games = {
         },
         {
             "fixture": {
-                "id": 868121,
-                "referee": "S. Hooper",
+                "id": 868126,
+                "referee": "A. Madley",
                 "timezone": "UTC",
-                "date": "2022-12-31T15:00:00+00:00",
-                "timestamp": 1672498800,
+                "date": "2023-01-03T19:45:00+00:00",
+                "timestamp": 1672775100,
                 "periods": {
-                    "first": null,
-                    "second": null
+                    "first": 1672775100,
+                    "second": 1672778700
                 },
                 "venue": {
-                    "id": 562,
-                    "name": "St. James' Park",
-                    "city": "Newcastle upon Tyne"
-                },
-                "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
-                }
-            },
-            "league": {
-                "id": 39,
-                "name": "Premier League",
-                "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
-                "season": 2022,
-                "round": "Regular Season - 18"
-            },
-            "teams": {
-                "home": {
-                    "id": 34,
-                    "name": "Newcastle",
-                    "logo": "https://media-1.api-sports.io/football/teams/34.png",
-                    "winner": null
-                },
-                "away": {
-                    "id": 63,
-                    "name": "Leeds",
-                    "logo": "https://media-1.api-sports.io/football/teams/63.png",
-                    "winner": null
-                }
-            },
-            "goals": {
-                "home": null,
-                "away": null
-            },
-            "score": {
-                "halftime": {
-                    "home": null,
-                    "away": null
-                },
-                "fulltime": {
-                    "home": null,
-                    "away": null
-                },
-                "extratime": {
-                    "home": null,
-                    "away": null
-                },
-                "penalty": {
-                    "home": null,
-                    "away": null
-                }
-            }
-        },
-        {
-            "fixture": {
-                "id": 868117,
-                "referee": "A. Taylor",
-                "timezone": "UTC",
-                "date": "2022-12-31T17:30:00+00:00",
-                "timestamp": 1672507800,
-                "periods": {
-                    "first": null,
-                    "second": null
-                },
-                "venue": {
-                    "id": 508,
-                    "name": "The American Express Community Stadium",
-                    "city": "Falmer, East Sussex"
-                },
-                "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
-                }
-            },
-            "league": {
-                "id": 39,
-                "name": "Premier League",
-                "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
-                "season": 2022,
-                "round": "Regular Season - 18"
-            },
-            "teams": {
-                "home": {
-                    "id": 51,
-                    "name": "Brighton",
-                    "logo": "https://media.api-sports.io/football/teams/51.png",
-                    "winner": null
-                },
-                "away": {
-                    "id": 42,
-                    "name": "Arsenal",
-                    "logo": "https://media.api-sports.io/football/teams/42.png",
-                    "winner": null
-                }
-            },
-            "goals": {
-                "home": null,
-                "away": null
-            },
-            "score": {
-                "halftime": {
-                    "home": null,
-                    "away": null
-                },
-                "fulltime": {
-                    "home": null,
-                    "away": null
-                },
-                "extratime": {
-                    "home": null,
-                    "away": null
-                },
-                "penalty": {
-                    "home": null,
-                    "away": null
-                }
-            }
-        },
-        {
-            "fixture": {
-                "id": 868123,
-                "referee": "J. Brooks",
-                "timezone": "UTC",
-                "date": "2023-01-01T14:00:00+00:00",
-                "timestamp": 1672581600,
-                "periods": {
-                    "first": null,
-                    "second": null
-                },
-                "venue": {
-                    "id": 593,
-                    "name": "Tottenham Hotspur Stadium",
+                    "id": 494,
+                    "name": "Emirates Stadium",
                     "city": "London"
                 },
                 "status": {
-                    "long": "Not Started",
-                    "short": "NS",
-                    "elapsed": null
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
                 }
             },
             "league": {
                 "id": 39,
                 "name": "Premier League",
                 "country": "England",
-                "logo": "https://media.api-sports.io/football/leagues/39.png",
-                "flag": "https://media.api-sports.io/flags/gb.svg",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
                 "season": 2022,
-                "round": "Regular Season - 18"
+                "round": "Regular Season - 19"
             },
             "teams": {
                 "home": {
-                    "id": 47,
-                    "name": "Tottenham",
-                    "logo": "https://media-1.api-sports.io/football/teams/47.png",
+                    "id": 42,
+                    "name": "Arsenal",
+                    "logo": "https://media-2.api-sports.io/football/teams/42.png",
                     "winner": null
                 },
                 "away": {
-                    "id": 66,
-                    "name": "Aston Villa",
-                    "logo": "https://media.api-sports.io/football/teams/66.png",
+                    "id": 34,
+                    "name": "Newcastle",
+                    "logo": "https://media-3.api-sports.io/football/teams/34.png",
                     "winner": null
                 }
             },
             "goals": {
-                "home": null,
-                "away": null
+                "home": 0,
+                "away": 0
             },
             "score": {
                 "halftime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 0
+                },
+                "extratime": {
                     "home": null,
                     "away": null
                 },
-                "fulltime": {
+                "penalty": {
                     "home": null,
                     "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 868131,
+                "referee": "A. Marriner",
+                "timezone": "UTC",
+                "date": "2023-01-03T19:45:00+00:00",
+                "timestamp": 1672775100,
+                "periods": {
+                    "first": 1672775100,
+                    "second": 1672778700
+                },
+                "venue": {
+                    "id": 8560,
+                    "name": "Goodison Park",
+                    "city": "Liverpool"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
+                "season": 2022,
+                "round": "Regular Season - 19"
+            },
+            "teams": {
+                "home": {
+                    "id": 45,
+                    "name": "Everton",
+                    "logo": "https://media-3.api-sports.io/football/teams/45.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 51,
+                    "name": "Brighton",
+                    "logo": "https://media-3.api-sports.io/football/teams/51.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 1,
+                "away": 4
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 1,
+                    "away": 4
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 868133,
+                "referee": "D. Bond",
+                "timezone": "UTC",
+                "date": "2023-01-03T19:45:00+00:00",
+                "timestamp": 1672775100,
+                "periods": {
+                    "first": 1672775100,
+                    "second": 1672778700
+                },
+                "venue": {
+                    "id": 547,
+                    "name": "King Power Stadium",
+                    "city": "Leicester, Leicestershire"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
+                "season": 2022,
+                "round": "Regular Season - 19"
+            },
+            "teams": {
+                "home": {
+                    "id": 46,
+                    "name": "Leicester",
+                    "logo": "https://media-2.api-sports.io/football/teams/46.png",
+                    "winner": false
+                },
+                "away": {
+                    "id": 36,
+                    "name": "Fulham",
+                    "logo": "https://media-2.api-sports.io/football/teams/36.png",
+                    "winner": true
+                }
+            },
+            "goals": {
+                "home": 0,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "fulltime": {
+                    "home": 0,
+                    "away": 1
+                },
+                "extratime": {
+                    "home": null,
+                    "away": null
+                },
+                "penalty": {
+                    "home": null,
+                    "away": null
+                }
+            }
+        },
+        {
+            "fixture": {
+                "id": 868128,
+                "referee": "S. Attwell",
+                "timezone": "UTC",
+                "date": "2023-01-02T17:30:00+00:00",
+                "timestamp": 1672680600,
+                "periods": {
+                    "first": 1672680600,
+                    "second": 1672684200
+                },
+                "venue": {
+                    "id": 10503,
+                    "name": "Gtech Community Stadium",
+                    "city": "Brentford, Middlesex"
+                },
+                "status": {
+                    "long": "Match Finished",
+                    "short": "FT",
+                    "elapsed": 90
+                }
+            },
+            "league": {
+                "id": 39,
+                "name": "Premier League",
+                "country": "England",
+                "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+                "flag": "https://media-1.api-sports.io/flags/gb.svg",
+                "season": 2022,
+                "round": "Regular Season - 19"
+            },
+            "teams": {
+                "home": {
+                    "id": 55,
+                    "name": "Brentford",
+                    "logo": "https://media-3.api-sports.io/football/teams/55.png",
+                    "winner": true
+                },
+                "away": {
+                    "id": 40,
+                    "name": "Liverpool",
+                    "logo": "https://media-2.api-sports.io/football/teams/40.png",
+                    "winner": false
+                }
+            },
+            "goals": {
+                "home": 3,
+                "away": 1
+            },
+            "score": {
+                "halftime": {
+                    "home": 2,
+                    "away": 0
+                },
+                "fulltime": {
+                    "home": 3,
+                    "away": 1
                 },
                 "extratime": {
                     "home": null,

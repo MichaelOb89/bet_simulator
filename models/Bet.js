@@ -7,7 +7,9 @@ const betSchema = new Schema({
     team: {type: String, required: true},
     date: Date,
     isFinished: Boolean,
-    user: String
+    isPaid: Boolean,
+    user: String,
+    won: Boolean
 }, {
     timestamps: true
 })

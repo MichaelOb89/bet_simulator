@@ -1,25 +1,23 @@
 import { useState, useEffect } from 'react';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import BetHistory from '../BetHistory/BetHistory';
 import Nav from '../../components/NavBar/NavBar';
 import {Routes, Route} from 'react-router-dom'
 import Home from '../Home/Home'
+import { getUser } from '../../utilities/users-service';
+
 
 function App() {
-  const[state, setState] = useState(null)
-  const [user, setUser] = useState(null)
-  
+  const [user, setUser] = useState(getUser())
+
   return (
     <main className='App'>
       { user ?
         <>
-          <Nav />
+          <Nav user={user} setUser={setUser}/>
           <Routes>
             <Route path='/' element={<Home user={user}/>}/>
-            <Route path='/orders/new' element={<NewOrderPage />}/>
-            <Route path='/orders' element={<OrderHistoryPage />}/>
-            <Route path='/' element={<NewOrderPage />}/>
+            <Route path='/history' element={<BetHistory user={user}/>}/>
           </Routes>
         </> :
         <AuthPage setUser={setUser}/>

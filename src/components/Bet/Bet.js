@@ -1,19 +1,11 @@
 import { useState, useEffect } from "react";
 
 
-export default function Bet({match, setMatch, userEmail}){
+export default function Bet({match, setMatch, newBet, setNewBet, setSubmitBet, submitBet}){
     const [homeOdds, setHomeOdds] = useState(null)
     const [awayOdds, setAwayOdds] = useState(null)
     const [drawOdds, setDrawOdds] = useState(null)
-    const [newBet, setNewBet] = useState({
-        matchId: "",
-        ammount: 0,
-        odds: "",
-        date: "",
-        team: "",
-        isFinished: false,
-        user: userEmail
-    })
+
     const getOdds = async (id) => {
         try {
             const response = await fetch(`https://v3.football.api-sports.io/odds?season=2022&fixture=${match.fixture.id}&bookmaker=8&league=39`, {
@@ -46,9 +38,11 @@ export default function Bet({match, setMatch, userEmail}){
                     ammount: 0,
                     odds: "",
                     team: "",
-                    isFinished: false
+                    isFinished: false,
+                    won: null
             })
             setMatch(null)
+            setSubmitBet(!submitBet)
         } catch (error) {
             console.error(error)
         }
@@ -80,16 +74,17 @@ export default function Bet({match, setMatch, userEmail}){
     }, [match])
     
     return(
-        <>
+            <div className="bet">
             <h1>Bet on {match.teams.home.name}&nbsp;x&nbsp;{match.teams.away.name}</h1>
             <h2>Home:&nbsp;{homeOdds} Away: &nbsp;{awayOdds} Draw: &nbsp;{drawOdds}</h2>
             <input name="ammount" value={newBet.ammount} onChange={handleChange}></input><br/>
             <select value={newBet.team} name="team" onChange={optionChangeHandler}>
+                <option></option>
                 <option value={match.teams.home.name}>{match.teams.home.name}</option>
                 <option value={match.teams.away.name}>{match.teams.away.name}</option>
                 <option value={"Draw"}>Draw</option>
             </select>
             <button onClick={createBet}>Submit Bet</button>
-        </>
+        </div>
     )
 }
