@@ -1,4 +1,4 @@
-const Bet = require("../../models/bet");
+const Bet = require('../../models/bet2')
 
 const dataController = {
   //index

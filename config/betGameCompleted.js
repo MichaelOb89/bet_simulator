@@ -2,7 +2,7 @@
 const schedule = require('node-schedule')
 require('dotenv').config()
 const db = require('./database')
-const Bet = require('../models/bet.js')
+const Bet = require('../models/bet2')
 
 const betDateChecker = async() => {
   const today = new Date() 

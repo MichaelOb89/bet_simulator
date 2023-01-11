@@ -1,7 +1,7 @@
 require('dotenv').config()
 const schedule = require('node-schedule')
 const db = require('./database')
-const Bet = require('../models/bet')
+const Bet = require('../models/bet2')
 // const pastGames = require('../data/finishedGames').response;
 const pastGames = require('../controllers/api/pastGames')
 
