@@ -1,3 +1,4 @@
+const schedule = require('node-schedule')
 
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 let pastGames = null
@@ -10,7 +11,6 @@ const getGames = async () => {
             }
         })
         pastGames = await response.json()
-        console.log(pastGames)
     } catch (error) {
         console.log(error)
     }
@@ -19,6 +19,10 @@ const getGames = async () => {
 if(!pastGames){
     getGames()
 }
+
+const job = schedule.scheduleJob('* 1 * * * ', ()=>{
+    getGames()
+})
 
 
 module.exports = pastGames

@@ -32,22 +32,28 @@ useEffect(()=>{
 
     return(
         <>
-            <ul>
-                {fisnishedBets.filter((bet)=>bet.isFinished).map((bet)=>{
-                    return(    
-                        <PastBets bet={bet}
+            <div className="past-bets">
+                <h2>Past Bets</h2>
+                <ul>
+                    {fisnishedBets.filter((bet)=>bet.isFinished).map((bet)=>{
+                        return(    
+                            <PastBets bet={bet}
+                            key={bet._id}/>
+                        )
+                    })}
+                </ul>
+            </div>          
+            <div className="active-bets">
+                <h2>Active Bets</h2>
+                <ul>
+                {fisnishedBets.filter((bet)=>!bet.isFinished).map((bet)=>{
+                    return(
+                        <LiveBets bet={bet}
                         key={bet._id}/>
                     )
                 })}
-            </ul>
-            <ul>
-            {fisnishedBets.filter((bet)=>!bet.isFinished).map((bet)=>{
-                return(
-                    <LiveBets bet={bet}
-                    key={bet._id}/>
-                )
-            })}
-            </ul>
+                </ul>
+            </div>
         </>
     )
 }

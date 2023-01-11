@@ -1,17 +1,19 @@
 // const game = require('../data/games')
-
+const schedule = require('node-schedule')
 require('dotenv').config()
 const db = require('./database')
 const Bet = require('../models/bet')
 
-const today = new Date() 
+const betDateChecker = async() => {
+  const today = new Date() 
+  Bet.updateMany({
+    date:{$lt: today}
+  },
+  {isFinished: true}).then(()=>console.log("work!"))
+}
 
-Bet.updateMany({
-  date:{$lt: today}
-},
-{isFinished: true})
-.then(()=>db.close())
+const job = schedule.scheduleJob('* 1 * * *', ()=>{
+  betDateChecker()
+})
 
-
-
-
+module.exports = job

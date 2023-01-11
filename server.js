@@ -1,11 +1,14 @@
 require('dotenv').config()
 require('./config/database')
-// const schedule = require('node-schedule')
+const schedule = require('node-schedule')
 const express = require('express')
 const path = require('path')
 const favicon = require('serve-favicon')
 const logger = require('morgan')
 const PORT = process.env.PORT || 3001
+require('./config/betGameCompleted')
+require('./config/newPayout')
+
 
 const app = express()
 
@@ -36,8 +39,13 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
-// const job = schedule.scheduleJob('30 * * * * * ', function(){
-//     console.log("This works")
+// const job = schedule.scheduleJob('50 * * * * * ', function(){
+//     console.log("yesssss")
+//     const today = new Date() 
+//     Bet.updateMany({
+//       date:{$lt: today}
+//     },
+//     {isFinished: true})
 // })
 
 app.listen(PORT, () => {

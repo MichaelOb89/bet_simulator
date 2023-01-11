@@ -1,5 +1,10 @@
-html, body{
+html, body, #root{
   height: 100%;
+}
+
+body{
+  margin-top: 60px;
+  background-color: #e3e3e3;
 }
 
 .game-container{
@@ -9,34 +14,45 @@ html, body{
 }
 
 .game-list-container{
+  padding-top: -20px;
   width: 20%;
   text-align: center;
+  border-right: solid;
+  border-color: rgb(39,253,134);
+  border-width: 3px;
+  background-color: rgb(52,6,61);
+  color: #e4e4e4; 
 }
 
 .game-list-container ul{
   text-align: center;
   text-decoration: none;
   list-style: none;
+  padding-right: 15px;
+  padding-left: 0;
 }
 
 .game-container img{
   width: 5em;
 }
+
 nav .log-out{
   position: absolute;
   right: 0;
   display: flex;
-  color: ghostwhite;
+  color: rgb(52,6,61);
+  padding-right: 10px;
 }
 
 nav{
-  background-color: rgb(46, 46, 46);
+  background-color: rgb(39,253,134);
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   padding: 15px;
   display: flex;
+  height: 20px;
 }
 
 nav div div{
@@ -45,7 +61,7 @@ nav div div{
 
 nav a {
   text-decoration: none;
-  color: ghostwhite;
+  color: rgb(52,6,61);
 }
 
 .home-container{
@@ -57,6 +73,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-left: 10px;
 }
 
 table {
@@ -70,8 +87,8 @@ table {
   margin: 15px;
 }
 table th {
-  background-color: #009879;
-  color: #ffffff;
+  background-color: rgb(39,253,134);
+  color: rgb(52,6,61);
   text-align: left;
 }
 table td {
@@ -83,5 +100,55 @@ table tr:nth-of-type(even) {
 }
 
 table tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid rgb(39,253,134);
+}
+
+.past-bets ul{
+  display: flex;
+}
+
+
+
+main > main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  flex-direction: column;
+  background-image: url("https://wallpapers.com/images/hd/premier-league-in-green-bm375w1gy0sohcz9.jpg");
+}
+
+main{
+  height: 100%;
+  background-position: center;
+}
+
+main > h3:hover{
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form > label, form > input {
+  margin: 5px;
+}
+
+.bet-component{
+  background-color: rgb(39,253,134);
+  display: inline-block;
+  border: solid;
+  border-radius: 10%;
+  padding: 15px;
+  margin: 0 15px 0 15px;
+}
+
+.past-bets li, .active-bets li{
+  list-style: none;
+  max-width: 150px;
+  text-align: center;
+  color: rgb(52,6,61);
 }
